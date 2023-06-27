@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchor" stylesheets="@Editor.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studiaproj.EdytorController">
+   <children>
+      <Label fx:id="UserN" layoutX="211.0" layoutY="15.0" prefHeight="17.0" prefWidth="129.0" text="UserN" />
+      <Button fx:id="Stworz" layoutX="17.0" layoutY="24.0" mnemonicParsing="false" onAction="#StworzButton" text="Stwórz" />
+      <Separator layoutY="78.0" prefHeight="25.0" prefWidth="614.0" />
+      <TableView fx:id="Tprzedmiot" layoutX="108.0" layoutY="160.0" prefHeight="200.0" prefWidth="256.0">
+        <columns>
+          <TableColumn fx:id="PNazwa" text="Nazwa" />
+          <TableColumn fx:id="PLvl" prefWidth="41.0" text="Lvl" />
+            <TableColumn fx:id="PKlasa" prefWidth="67.0" text="Klasa" />
+            <TableColumn fx:id="PTyp" prefWidth="67.0" text="Typ" />
+        </columns>
+      </TableView>
+      <Label layoutX="72.0" layoutY="28.0" prefHeight="17.0" prefWidth="48.0" text="Postacie" />
+      <TableView fx:id="Ekwi" layoutX="17.0" layoutY="160.0" prefHeight="200.0" prefWidth="81.0">
+        <columns>
+          <TableColumn fx:id="EkwiN" prefWidth="75.0" text="Nazwa" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="Wyloguj" layoutX="534.0" layoutY="11.0" mnemonicParsing="false" onAction="#WylogujButton" text="Wyloguj" />
+      <Button fx:id="UsunP" layoutX="124.0" layoutY="24.0" mnemonicParsing="false" onAction="#UsunPButton" text="Usuń" />
+      <Label layoutX="29.0" layoutY="143.0" prefHeight="17.0" prefWidth="58.0" text="Ekwipunek" />
+      <Label layoutX="206.0" layoutY="135.0" text="Przedmioty" />
+      <Button fx:id="StworzPrzedmiot" onAction="#StworzPrzedmiotButton" layoutX="108.0" layoutY="131.0" mnemonicParsing="false" text="Dodaj" />
+      <Button layoutX="321.0" layoutY="131.0" mnemonicParsing="false" text="Usun" />
+      <ChoiceBox fx:id="Postacie" layoutX="17.0" layoutY="53.0" prefWidth="150.0" />
+      <Label fx:id="Klasa" layoutX="416.0" layoutY="103.0" text="Klasa:  " />
+      <Label fx:id="Level" layoutX="416.0" layoutY="123.0" text="Level: " />
+      <Rectangle fx:id="SlotHelm" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="377.0" layoutY="169.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+      <Rectangle fx:id="SlotNapiersnik" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="377.0" layoutY="207.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+      <Rectangle fx:id="SlotNaramiennik" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="377.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+      <Rectangle fx:id="SlotButy" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="377.0" layoutY="284.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+      <Rectangle fx:id="SlotBron" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="377.0" layoutY="322.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+      <Label fx:id="TextHelm" layoutX="419.0" layoutY="177.0" text="Helm: " />
+      <Label fx:id="TextNapiersnik" layoutX="418.0" layoutY="215.0" text="Napiersnik: " />
+      <Label fx:id="TextNaramiennik" layoutX="418.0" layoutY="252.0" prefHeight="17.0" prefWidth="75.0" text="Naramiennik: " />
+      <Label fx:id="TextButy" layoutX="418.0" layoutY="292.0" text="Buty: " />
+      <Label fx:id="TextBron" layoutX="418.0" layoutY="330.0" text="Bron: " />
+   </children>
+</AnchorPane>
